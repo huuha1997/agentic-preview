@@ -1,1 +1,288 @@
-<!doctype html><html><body><h1>Agentic Preview</h1><p>run=4a7e0ab5</p></body></html>
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FlowAI - Automate your workflow with precision</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface": "#f7f9fb",
+                      "on-primary-fixed": "#0f0069",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-low": "#f2f4f6",
+                      "outline": "#777587",
+                      "secondary-container": "#b6b4ff",
+                      "inverse-surface": "#2d3133",
+                      "surface-container-high": "#e6e8ea",
+                      "surface-dim": "#d8dadc",
+                      "on-primary-fixed-variant": "#3323cc",
+                      "on-secondary-fixed-variant": "#413f82",
+                      "on-tertiary-fixed-variant": "#005048",
+                      "on-error": "#ffffff",
+                      "surface-bright": "#f7f9fb",
+                      "on-tertiary-fixed": "#00201c",
+                      "primary": "#3525cd",
+                      "surface-container-highest": "#e0e3e5",
+                      "on-secondary-fixed": "#140f54",
+                      "tertiary": "#00534a",
+                      "tertiary-fixed": "#71f8e4",
+                      "on-error-container": "#93000a",
+                      "inverse-primary": "#c3c0ff",
+                      "on-secondary-container": "#454386",
+                      "background": "#f7f9fb",
+                      "primary-fixed": "#e2dfff",
+                      "on-tertiary-container": "#69f1de",
+                      "tertiary-container": "#006d62",
+                      "surface-container": "#eceef0",
+                      "on-tertiary": "#ffffff",
+                      "primary-fixed-dim": "#c3c0ff",
+                      "on-surface-variant": "#464555",
+                      "outline-variant": "#c7c4d8",
+                      "on-primary-container": "#dad7ff",
+                      "tertiary-fixed-dim": "#4fdbc8",
+                      "secondary-fixed": "#e2dfff",
+                      "on-primary": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "error": "#ba1a1a",
+                      "secondary-fixed-dim": "#c3c0ff",
+                      "surface-tint": "#4d44e3",
+                      "on-surface": "#191c1e",
+                      "on-background": "#191c1e",
+                      "inverse-on-surface": "#eff1f3",
+                      "surface-variant": "#e0e3e5",
+                      "secondary": "#58579b",
+                      "primary-container": "#4f46e5",
+                      "on-secondary": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": [
+                              "Manrope"
+                      ],
+                      "body": [
+                              "Inter"
+                      ],
+                      "label": [
+                              "Inter"
+                      ]
+              }
+            },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #3525cd 0%, #4f46e5 100%);
+        }
+        .orchestrator-card-accent {
+            border-left: 4px solid #006d62; /* tertiary-container */
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-fixed">
+<!-- Top Navigation -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<nav class="flex justify-between items-center h-16 px-6 md:px-12 max-w-7xl mx-auto w-full">
+<div class="text-2xl font-bold tracking-tighter text-slate-900 dark:text-white font-headline">FlowAI</div>
+<div class="hidden md:flex items-center gap-8 font-headline font-medium text-sm tracking-tight">
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors" href="#">Features</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors" href="#">Pricing</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors" href="#">About</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="px-5 py-2.5 rounded-lg bg-primary-container text-white font-medium text-sm hover:opacity-90 transition-all Active:scale-95 duration-150 ease-in-out">
+                    Start Free Trial
+                </button>
+</div>
+</nav>
+</header>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative overflow-hidden py-24 md:py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="z-10">
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight text-on-surface mb-6 leading-[1.1]">
+                        Automate your workflow with <span class="text-primary italic">precision</span>
+</h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-xl mb-10 leading-relaxed">
+                        AI-powered automation that helps teams focus on what matters. Integrate with your favorite tools in minutes.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="hero-gradient px-8 py-4 rounded-lg text-white font-semibold text-base shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-95 transition-all">
+                            Start Free Trial
+                        </button>
+<button class="px-8 py-4 rounded-lg bg-surface-container-lowest text-primary font-semibold text-base outline outline-1 outline-variant/30 hover:bg-surface-container-low transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-xl">play_circle</span>
+                            Watch Demo
+                        </button>
+</div>
+</div>
+<div class="relative lg:h-[600px] flex items-center justify-center">
+<!-- Asymmetrical Decorative Elements -->
+<div class="absolute -top-12 -right-12 w-64 h-64 bg-primary-fixed rounded-full blur-3xl opacity-30"></div>
+<div class="absolute -bottom-12 -left-12 w-64 h-64 bg-tertiary-fixed rounded-full blur-3xl opacity-20"></div>
+<div class="relative w-full aspect-square md:aspect-video lg:aspect-square bg-surface-container-high rounded-xl shadow-2xl overflow-hidden ring-1 ring-outline-variant/10">
+<img class="w-full h-full object-cover" data-alt="Modern data dashboard with high-contrast UI elements, floating glass charts, and sleek dark indigo accents showing real-time automation analytics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtFNp4bM_SCyKY5Dat___YnTqhJY6oj31HKDyYVBkeOUq07xzck5m-4D4JI2NOyGO2xHf-1IOvNldmveyKquOzHvdXEX2jE5ZR7ND9SR4bLkrfZPepdGy-zE0ppzBDhgl7O3qSHhGxVC0Xsn-WqsdXAmHaWXnzJIAfvdwkJkzeGRuNIr0LL2u3XubSlskgegYaYF2cbXH8cU6xDW-PWnhJuOhITz2Txxl_os-YnzRj74hmF12qhp5MD9g82tLx2McNVS3sHZmhRg"/>
+<!-- Floating Glass UI Overlays -->
+<div class="absolute top-8 left-8 glass-card p-4 rounded-lg shadow-lg border border-white/20 hidden md:block">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-sm">bolt</span>
+</div>
+<div>
+<p class="text-[10px] uppercase font-bold tracking-wider text-on-surface-variant">Task Efficiency</p>
+<p class="text-sm font-headline font-bold text-on-surface">+92%</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof Section -->
+<section class="py-12 bg-surface-container-low border-y border-outline-variant/5">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<p class="text-center text-xs font-bold uppercase tracking-[0.2em] text-on-surface-variant/60 mb-10">Trusted by modern industry leaders</p>
+<div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+<div class="flex items-center gap-2 font-headline font-extrabold text-2xl">
+<span class="material-symbols-outlined text-primary">change_history</span> Vertex
+                    </div>
+<div class="flex items-center gap-2 font-headline font-extrabold text-2xl">
+<span class="material-symbols-outlined text-primary">token</span> Monolith
+                    </div>
+<div class="flex items-center gap-2 font-headline font-extrabold text-2xl">
+<span class="material-symbols-outlined text-primary">terminal</span> Syntax
+                    </div>
+<div class="flex items-center gap-2 font-headline font-extrabold text-2xl">
+<span class="material-symbols-outlined text-primary">api</span> Nexus
+                    </div>
+</div>
+</div>
+</section>
+<!-- Features Section -->
+<section class="py-24 bg-on-primary-fixed text-white overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="max-w-2xl mb-20">
+<h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-6">Engineered for Efficiency</h2>
+<p class="text-primary-fixed-dim text-lg leading-relaxed">We've stripped away the noise to build an automation engine that feels like an extension of your team's natural workflow.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Feature Card 1 -->
+<div class="bg-primary/10 rounded-xl p-8 orchestrator-card-accent border border-white/5 hover:bg-primary/20 transition-all group">
+<div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-4">Smart Automation</h3>
+<p class="text-on-primary-container/80 text-sm leading-relaxed">Offload repetitive tasks to our contextual AI engine. It learns from your patterns and suggests improvements.</p>
+</div>
+<!-- Feature Card 2 -->
+<div class="bg-primary/10 rounded-xl p-8 orchestrator-card-accent border border-white/5 hover:bg-primary/20 transition-all group">
+<div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">folder_managed</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-4">Unified Dashboard</h3>
+<p class="text-on-primary-container/80 text-sm leading-relaxed">A single source of truth for all your projects. Manage assets, timelines, and logic in one centralized hub.</p>
+</div>
+<!-- Feature Card 3 -->
+<div class="bg-primary/10 rounded-xl p-8 orchestrator-card-accent border border-white/5 hover:bg-primary/20 transition-all group">
+<div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">analytics</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-4">Team Collaboration</h3>
+<p class="text-on-primary-container/80 text-sm leading-relaxed">Frictionless communication built directly into your workflow. No more context switching between tools.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Layout Section -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 h-auto md:h-[600px]">
+<div class="md:col-span-2 md:row-span-2 bg-surface-container-lowest rounded-xl p-8 flex flex-col justify-between group overflow-hidden">
+<div>
+<span class="px-3 py-1 bg-tertiary-fixed text-on-tertiary-fixed text-[10px] font-bold rounded-full uppercase tracking-widest mb-6 inline-block">Deep Integration</span>
+<h3 class="text-3xl font-headline font-bold text-on-surface mb-4">Connect 500+ Apps</h3>
+<p class="text-on-surface-variant max-w-sm">From Slack to Salesforce, FlowAI bridges the gap between your entire tech stack effortlessly.</p>
+</div>
+<div class="mt-8 relative h-48">
+<img class="absolute inset-0 w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-700" data-alt="Abstract visualization of digital nodes connecting in a complex network, neon light trails on a dark surface representing data integration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLZtaxRMPGaVFGRv6RzL-ZrGbl0JVM0HumSHR5bc8NFar-bpPW5W4ai8aJlKSAhARbkYn3bqCOYMmUBcGziB4mardOfCqBukzQMgSc1s_PJbhrtJd0y08r5UJCQTtB5FQpqNXNC0oQm3eWhIcRgwrEgIYYHCUXixR8z3zmgModO_T69z2wOoZxUzYSVjqmD-ss3WTAkcZgWX6RLC-IdcabE5z9qOE8crVtYczAaBylspZtjrGZkjfo7Ar6F3o2SDvcAp5PuXCNaw"/>
+</div>
+</div>
+<div class="md:col-span-2 bg-tertiary-container text-white rounded-xl p-8 relative overflow-hidden flex items-center">
+<div class="z-10 relative">
+<h3 class="text-2xl font-headline font-bold mb-2">99.9% Uptime SLA</h3>
+<p class="text-tertiary-fixed/80">Enterprise-grade reliability you can trust with your mission-critical operations.</p>
+</div>
+<span class="material-symbols-outlined absolute right-[-20px] bottom-[-20px] text-[160px] opacity-10 rotate-12">verified_user</span>
+</div>
+<div class="md:col-span-1 bg-primary text-white rounded-xl p-8 flex flex-col justify-center items-center text-center">
+<p class="text-4xl font-headline font-extrabold mb-1">12M+</p>
+<p class="text-primary-fixed/70 text-sm font-medium uppercase tracking-tighter">Tasks Automated</p>
+</div>
+<div class="md:col-span-1 bg-surface-container-highest rounded-xl p-8 flex flex-col justify-center items-center text-center">
+<p class="text-4xl font-headline font-extrabold text-on-surface mb-1">24/7</p>
+<p class="text-on-surface-variant text-sm font-medium uppercase tracking-tighter">Global Support</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-20 px-6">
+<div class="max-w-5xl mx-auto hero-gradient rounded-3xl p-12 md:p-20 text-center relative overflow-hidden shadow-2xl">
+<div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.1),transparent)]"></div>
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-white mb-8 relative z-10">Ready to orchestrate your workflow?</h2>
+<div class="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
+<button class="bg-white text-primary font-bold px-10 py-4 rounded-lg hover:bg-surface-container-low transition-all">
+                        Get Started Now
+                    </button>
+<button class="bg-primary-fixed/20 backdrop-blur-md text-white font-bold px-10 py-4 rounded-lg border border-white/20 hover:bg-primary-fixed/30 transition-all">
+                        Contact Sales
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 w-full py-12">
+<div class="flex flex-col md:flex-row justify-between items-center px-6 md:px-12 max-w-7xl mx-auto gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="text-xl font-bold text-slate-900 dark:text-white font-headline">FlowAI</div>
+<p class="font-body text-sm text-slate-500 dark:text-slate-400">© 2024 FlowAI. All rights reserved.</p>
+</div>
+<div class="flex gap-8 font-body text-sm text-slate-500 dark:text-slate-400">
+<a class="hover:text-indigo-600 transition-colors hover:underline underline-offset-4" href="#">Privacy Policy</a>
+<a class="hover:text-indigo-600 transition-colors hover:underline underline-offset-4" href="#">Terms of Service</a>
+<a class="hover:text-indigo-600 transition-colors hover:underline underline-offset-4" href="#">Contact Us</a>
+</div>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-slate-600 hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-xl">language</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-slate-600 hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-xl">share</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
