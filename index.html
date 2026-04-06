@@ -1,1 +1,469 @@
-<!doctype html><html><body><h1>Agentic Preview</h1><p>run=4a7e0ab5</p></body></html>
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nexus AI | Automate Everything</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#e9ddff",
+                        "secondary-container": "#571bc1",
+                        "surface-container-lowest": "#090e1b",
+                        "on-primary-fixed": "#001a42",
+                        "tertiary": "#a4c9ff",
+                        "primary": "#adc6ff",
+                        "on-secondary-fixed-variant": "#5516be",
+                        "on-secondary-container": "#c4abff",
+                        "tertiary-container": "#4c93e7",
+                        "on-error": "#690005",
+                        "secondary-fixed-dim": "#d0bcff",
+                        "surface-variant": "#303443",
+                        "on-primary-fixed-variant": "#004395",
+                        "on-error-container": "#ffdad6",
+                        "on-primary-container": "#00285d",
+                        "surface-container-low": "#161b29",
+                        "primary-fixed": "#d8e2ff",
+                        "tertiary-fixed": "#d4e3ff",
+                        "error": "#ffb4ab",
+                        "outline-variant": "#424754",
+                        "surface-container-high": "#252a38",
+                        "primary-fixed-dim": "#adc6ff",
+                        "on-surface-variant": "#c2c6d6",
+                        "on-secondary": "#3c0091",
+                        "inverse-surface": "#dee2f5",
+                        "on-surface": "#dee2f5",
+                        "on-primary": "#002e6a",
+                        "secondary": "#d0bcff",
+                        "surface-container": "#1a1f2d",
+                        "surface-bright": "#343948",
+                        "surface-tint": "#adc6ff",
+                        "background": "#0e1320",
+                        "error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#004883",
+                        "surface-dim": "#0e1320",
+                        "primary-container": "#4d8eff",
+                        "on-tertiary-container": "#002a51",
+                        "tertiary-fixed-dim": "#a4c9ff",
+                        "on-background": "#dee2f5",
+                        "outline": "#8c909f",
+                        "on-tertiary-fixed": "#001c39",
+                        "inverse-primary": "#005ac2",
+                        "surface": "#0e1320",
+                        "on-secondary-fixed": "#23005c",
+                        "inverse-on-surface": "#2b303e",
+                        "surface-container-highest": "#303443",
+                        "on-tertiary": "#00315d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #0e1320;
+            color: #dee2f5;
+            font-family: 'Inter', sans-serif;
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(173, 198, 255, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 100% 100%, rgba(208, 188, 255, 0.03) 0%, transparent 50%);
+        }
+        .nexus-glow {
+            background: linear-gradient(135deg, #adc6ff 0%, #d0bcff 100%);
+        }
+        .glass-panel {
+            background: rgba(48, 52, 67, 0.4);
+            backdrop-filter: blur(24px);
+        }
+        .dot-grid {
+            background-image: radial-gradient(rgba(140, 144, 159, 0.1) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="antialiased">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-950/40 backdrop-blur-xl shadow-[0_8px_32px_0_rgba(173,198,255,0.04)]">
+<nav class="flex items-center justify-between px-8 py-4 max-w-7xl mx-auto font-['Plus_Jakarta_Sans'] tracking-tight">
+<div class="text-2xl font-bold bg-gradient-to-r from-blue-200 to-purple-300 bg-clip-text text-transparent">Nexus AI</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-300 hover:text-white transition-colors" href="#">Product</a>
+<a class="text-slate-300 hover:text-white transition-colors" href="#">Features</a>
+<a class="text-slate-300 hover:text-white transition-colors" href="#">Pricing</a>
+<a class="text-slate-300 hover:text-white transition-colors" href="#">Resources</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-slate-300 hover:text-white transition-colors px-4 py-2 font-medium">Login</button>
+<button class="nexus-glow text-on-primary-fixed px-6 py-2.5 rounded-xl font-bold active:scale-95 transition-transform">Get Started</button>
+</div>
+</nav>
+</header>
+<main class="dot-grid pt-32">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 pb-24 text-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant/15 mb-8">
+<span class="flex h-2 w-2 rounded-full nexus-glow"></span>
+<span class="text-xs font-label uppercase tracking-widest text-primary">v2.0 is now live</span>
+</div>
+<h1 class="text-6xl md:text-8xl font-headline font-extrabold tracking-tight mb-8 leading-[1.1]">
+                Automate Everything. <br/>
+<span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Scale Without Limits.</span>
+</h1>
+<p class="text-xl text-on-surface-variant max-w-3xl mx-auto mb-12 font-body leading-relaxed">
+                Nexus AI connects your tools, automates repetitive tasks, and gives your team superpowers — all without writing a single line of code.
+            </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+<button class="nexus-glow text-on-primary-fixed px-8 py-4 rounded-xl font-bold text-lg shadow-[0_0_40px_rgba(173,198,255,0.2)] hover:scale-105 transition-all">Start Free Trial</button>
+<button class="flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-lg bg-surface-container hover:bg-surface-container-high transition-colors border border-outline-variant/15">
+<span class="material-symbols-outlined">play_circle</span> Watch Demo
+                </button>
+</div>
+<div class="flex flex-wrap justify-center items-center gap-8 text-on-surface-variant text-sm font-label uppercase tracking-wider opacity-60">
+<div class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">check_circle</span> No credit card required</div>
+<div class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">check_circle</span> 14-day free trial</div>
+<div class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">check_circle</span> SOC 2 Certified</div>
+</div>
+<!-- Hero Illustration -->
+<div class="mt-24 relative">
+<div class="absolute -inset-1 bg-gradient-to-r from-primary/20 to-secondary/20 blur-3xl opacity-30"></div>
+<div class="relative glass-panel rounded-3xl p-4 border border-outline-variant/15 overflow-hidden">
+<img alt="Nexus Dashboard" class="rounded-2xl w-full object-cover" data-alt="Modern dark mode software dashboard with glowing blue and purple data visualizations, abstract nodes, and glassmorphism interface elements" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTUzXDAjTaPrUtl5rjeIoB7MoDl8lDXNDXscP3zqX2mZ_uVQB2sqqqeg-8R25gJ0YhSy4HT6sxw6-ASG_JRAsufYw2woWueqA017mf3cFeeSc16X3Et-tWAneh-XCBVda5c3gzx-XDW04Ja76EKf8QSEjDV_mYZMzFfR15HiC8o2aIn9e9LRIkRlNbMfbGtSikzeBvIiI4pZKN6hVn5clMGBodd-r0xAkwWfh-NkRgKwSGzxdd11BpCSDbPGewkvt_B6oegzHmNg"/>
+</div>
+</div>
+</section>
+<!-- Logo Bar -->
+<section class="py-20 bg-surface-container-lowest/50">
+<div class="max-w-7xl mx-auto px-8">
+<p class="text-center text-on-surface-variant mb-12 font-label uppercase tracking-widest text-xs opacity-60">Trusted by 2,000+ teams worldwide</p>
+<div class="flex flex-wrap justify-center items-center gap-x-16 gap-y-10 grayscale opacity-40">
+<img alt="Stripe" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsiO_c4S5qbwcV6ib7dMTo-CJ0V_7TWLJYkRPAGn-3sqtDDzpf2ldb-l9D5c-TcLSEhVVz3gvDAE6mS0RGHUFlHPKi14xL62OZXGGgoG74w1cRzDXDfZGO7jorQo7RM6vE0jhHN0Q-s1OI4ky5CYHn8zvFTgdXkf0zYJMIutu-Iy09NMFt4yQv4EV87PWZrXd-ivR9wKzhii0dl60XG8DcK0AKp3WGakIcmcjUuC5MF029b05jn-ML9M7dzjLyHgRg_SIw-571yw"/>
+<img alt="Notion" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIIT5z93onLNj8jSK_Iqds1FSQAlYc0i3w38WNwOfe-0VWWQBq4LeYRlta6oadTCCkqGNFQIqEQ51E9XN3qviSEEDoyIkW9Xj4s3OWPBFG1h-gX9V3V1QQD57N8dAfdL2DF2E6EVsf2-xHVpm3fVn5oJ14uZe20zYofhAbXK8TdndS51ZvNkZIDTjyw7l0dl42TyHUd7cTCyfKeqISh1BScmKeNPWx6LQSGsEVbHVxmew6t7CCBD4ROS-dPB4Lbns2aeWDCIp2Yw"/>
+<img alt="Slack" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy8uATmdoLytG0_M8BhTpzW37RlcM2iEaPbw9Nn1EA_dOSp4jBL7BqjiJqGOkXyVs-EC5XFI7oAh47jjHOA8vkcNbLjJ9jeE2dcqCEw54rseBfbZfnZDO9tkRqteghwFhI8q3E-SrsNs5H8zlVXd2RbC_2bi4AFMaBLUCOc6tlrTTNd4XTCVVqWsaeHgjHpOmFPRa3-qRaod175VDqSOqtE-qx-cmxY22YTpLOXUsKl9iiOdllESxi785UvgMM0Nbj9LJ9Bl6RkQ"/>
+<img alt="Shopify" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQGXAD0w_J2eivLD6P_Sjj1ymQ-lKWhUBWWeJG6-Mc1erEVYK_G8HFNVxMgcF_zBvhfT2TNBaxuSN04D4lbh0o11L0Cjk7kSrn4AoB89CKmcRmRKUxkplanQhjZxiJxH70jvyZ-Af6BTG0hpxB4d7LS3cS_jCriSyQCI9rRK1jkAqUQFV7oVRlMoASyv7LGHr7XVwGQZic6BSM0_leEHhhRgbNld8lLMLv6KDUbZUmXYNRhuwoRzswWk1uG2uPeNAmmpq0-05xIw"/>
+<img alt="HubSpot" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxXCpqgMI3Fxbkj8ibXgfq8bbnU2pL37th33mJOx5_CZUqu0ZK2bilfEu8CQNJg-ga684hXoXdYTwTHOWMzfy93ZVtxLWBWOsKiTiaEfRH6JEU-8J4F7JZU50qLwXyMpVkAVl5SsxrBQu25OTYigqnYUhuhOu8pOLBgSK4uGwf-zC-NFQiA0gIWGFqt76RUaVJ7rDmy7FF2FASHhNO3gs7EKE1tN1Ir75fSU9Wj2jkEIICei0PQ6MccpDHgpXsKZi8YiYSoADAyg"/>
+<img alt="Figma" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpgdldXgyzzX9tKNw85_TWxWjwWDjRSUkzkCGP9sLZ3KQnnZlm5uBaJxEhocyL1Y_l9TiixINHry7nlXOW9xG8EkZjhdYH6e5-0SBmjKUVZYootIyaRbfUOYYErr16iZoOPRuW-9nbzivabVt__nYrYVrisvbXei61uSxHJGiAvcQwJUqRDDZJzf_BAg5SPmmUUfloHCJkecUIrXqY1B5OmuXzWLHh7rN1ZlTF4TuIiN6LFtuCLLk75qkhqBOSc9ulZq87xtyOTw"/>
+<img alt="Linear" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9zwS73hBqerluuNdl080anK1TyIc3OMiSq1CzAZJOU8hyM91ATQvyjbejO-Lq5KRb-TVYofG4MCKgzCfqB4LHe9ufdX7aKnOq1WAnPaAXqQxM4qZBL9aPJAAyFqxh4mUI9sKlgyCNHla6aYe5swJBeUnNFbMxtdgtmQAZ8c6wNw7OxElxCwRL084TNKV-SjqZc3i_5HkGLLS8bJSI7jzzHWOTwb2J8MaaSdtTDM08hI00vdfGl8H73MF1ksyvzHxTz3EPS6uCIQ"/>
+<img alt="Vercel" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFPjvvVwyNmVBJBE_0_WqnuBqtDPVW8POetr50JhqdbI1ulLgVR3M5hR2UcVy9oTXjdemOWWcG_4dSrnDTcXvDE3wI30w-PlS4nh2_ETJXs4NLnNTIj0jd_n2v3OnMCDwlj0iipBj5eT80DBqzHIMV9yoCuUgYum76TGt6thLANwp8gTQALx-ixAM4ooNU4RfUZyILQRtBlXxIX0-AdkCaSuUC_s-3rL4mvme2r6XxK_rxXof-a0-QRbr2Jik7a0xJbx0tge0zSQ"/>
+</div>
+</div>
+</section>
+<!-- Features Grid -->
+<section class="py-32 max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-4">
+<h2 class="text-4xl md:text-5xl font-headline font-bold max-w-xl leading-tight">Everything you need to build <span class="text-secondary">smarter workflows</span></h2>
+<p class="text-on-surface-variant max-w-xs pb-2 font-body">Scale your operations with tools designed for speed and reliability.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Feature 1 -->
+<div class="bg-surface-container-low p-8 rounded-2xl hover:bg-surface-container transition-all group border border-transparent hover:border-outline-variant/10">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:nexus-glow group-hover:text-on-primary-fixed transition-colors">
+<span class="material-symbols-outlined">account_tree</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Visual Workflow Builder</h3>
+<p class="text-on-surface-variant leading-relaxed">Drag and drop nodes to create complex automated paths without any code.</p>
+</div>
+<!-- Feature 2 -->
+<div class="bg-surface-container-low p-8 rounded-2xl hover:bg-surface-container transition-all group border border-transparent hover:border-outline-variant/10">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:nexus-glow group-hover:text-on-primary-fixed transition-colors">
+<span class="material-symbols-outlined">hub</span>
+</div>
+<h3 class="text-xl font-bold mb-3">300+ Integrations</h3>
+<p class="text-on-surface-variant leading-relaxed">Connect to Slack, Shopify, Notion, and every other tool your team relies on.</p>
+</div>
+<!-- Feature 3 -->
+<div class="bg-surface-container-low p-8 rounded-2xl hover:bg-surface-container transition-all group border border-transparent hover:border-outline-variant/10">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:nexus-glow group-hover:text-on-primary-fixed transition-colors">
+<span class="material-symbols-outlined">psychology</span>
+</div>
+<h3 class="text-xl font-bold mb-3">AI Decision Engine</h3>
+<p class="text-on-surface-variant leading-relaxed">Leverage machine learning to make intelligent choices within your flows.</p>
+</div>
+<!-- Feature 4 -->
+<div class="bg-surface-container-low p-8 rounded-2xl hover:bg-surface-container transition-all group border border-transparent hover:border-outline-variant/10">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:nexus-glow group-hover:text-on-primary-fixed transition-colors">
+<span class="material-symbols-outlined">monitoring</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Real-time Monitoring</h3>
+<p class="text-on-surface-variant leading-relaxed">Track every execution and performance metric from a live dashboard.</p>
+</div>
+<!-- Feature 5 -->
+<div class="bg-surface-container-low p-8 rounded-2xl hover:bg-surface-container transition-all group border border-transparent hover:border-outline-variant/10">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:nexus-glow group-hover:text-on-primary-fixed transition-colors">
+<span class="material-symbols-outlined">groups</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Team Collaboration</h3>
+<p class="text-on-surface-variant leading-relaxed">Share workflows, leave comments, and build together in a unified workspace.</p>
+</div>
+<!-- Feature 6 -->
+<div class="bg-surface-container-low p-8 rounded-2xl hover:bg-surface-container transition-all group border border-transparent hover:border-outline-variant/10">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:nexus-glow group-hover:text-on-primary-fixed transition-colors">
+<span class="material-symbols-outlined">security</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Enterprise Security</h3>
+<p class="text-on-surface-variant leading-relaxed">Bank-grade encryption, SSO, and granular permission controls for every team.</p>
+</div>
+</div>
+</section>
+<!-- How It Works -->
+<section class="py-32 relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+<h2 class="text-4xl font-headline font-bold text-center mb-20">Get started in 3 simple steps</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+<!-- Steps Line -->
+<div class="hidden md:block absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-outline-variant/30 to-transparent -translate-y-1/2"></div>
+<!-- Step 1 -->
+<div class="relative flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-2xl font-bold mb-8 relative z-10 shadow-xl">1</div>
+<h4 class="text-2xl font-headline font-bold mb-4">Connect Your Tools</h4>
+<p class="text-on-surface-variant max-w-xs">Easily authenticate your favorite software apps with a few clicks.</p>
+</div>
+<!-- Step 2 -->
+<div class="relative flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full nexus-glow text-on-primary-fixed flex items-center justify-center text-2xl font-bold mb-8 relative z-10 shadow-[0_0_30px_rgba(173,198,255,0.3)]">2</div>
+<h4 class="text-2xl font-headline font-bold mb-4">Build Your Workflow</h4>
+<p class="text-on-surface-variant max-w-xs">Design your automation using our intuitive visual drag-and-drop editor.</p>
+</div>
+<!-- Step 3 -->
+<div class="relative flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-2xl font-bold mb-8 relative z-10 shadow-xl">3</div>
+<h4 class="text-2xl font-headline font-bold mb-4">Sit Back &amp; Scale</h4>
+<p class="text-on-surface-variant max-w-xs">Watch as Nexus handles the grunt work while you focus on high-impact growth.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Metrics Section -->
+<section class="py-24 bg-surface-container-low/80 border-y border-outline-variant/5">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+<div>
+<div class="text-5xl font-headline font-extrabold text-primary mb-2">10M+</div>
+<div class="text-sm font-label uppercase tracking-widest text-on-surface-variant">Tasks Automated Daily</div>
+</div>
+<div>
+<div class="text-5xl font-headline font-extrabold text-primary mb-2">99.99%</div>
+<div class="text-sm font-label uppercase tracking-widest text-on-surface-variant">Uptime</div>
+</div>
+<div>
+<div class="text-5xl font-headline font-extrabold text-primary mb-2">2,000+</div>
+<div class="text-sm font-label uppercase tracking-widest text-on-surface-variant">Companies</div>
+</div>
+<div>
+<div class="text-5xl font-headline font-extrabold text-primary mb-2">150+</div>
+<div class="text-sm font-label uppercase tracking-widest text-on-surface-variant">Countries</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-32 max-w-7xl mx-auto px-8">
+<h2 class="text-4xl font-headline font-bold text-center mb-16">Loved by teams everywhere</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-container p-10 rounded-3xl border border-outline-variant/10 flex flex-col justify-between">
+<p class="text-lg italic leading-relaxed mb-10 text-on-surface">"Nexus AI has completely transformed our operations. We've automated 40+ hours of manual data entry every single week. It's like having a dedicated developer on the team."</p>
+<div class="flex items-center gap-4">
+<img alt="Sarah Chen" class="w-12 h-12 rounded-full object-cover" data-alt="Close-up portrait of a professional woman in a modern office, soft lighting, sharp focus on face" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGfaARqzdEk4ic-U_MjefPxQQr9Qn9SBemLYxIKsly0gi9yXt7jD3bsLOEAd9m42K1K19vxiEkRa8ivHzK6-w_u6L9YunXzxgYLrN8uSfWqfB5QRdrudv2rLLyYeFMmBi5vbZeeWktoqN1fP15QhPd4SnXG_RIpV8_1MXiVbGLhINbrGqeOaxN-eRIZSRkhnPCH7C8IAPZrZYpB-z2AOAWMbRtzr3418S23_Hoe8TD2x1e4-swFuBLLe5FvJvZwW_Gi-4xTcVHlg"/>
+<div>
+<div class="font-bold">Sarah Chen</div>
+<div class="text-xs text-secondary-fixed-dim uppercase tracking-wider">Product at Retool</div>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container p-10 rounded-3xl border border-outline-variant/10 flex flex-col justify-between">
+<p class="text-lg italic leading-relaxed mb-10 text-on-surface">"The deep integrations and AI decision engine are lightyears ahead of Zapier. We managed to build complex customer routing in minutes, not days."</p>
+<div class="flex items-center gap-4">
+<img alt="Marcus Johnson" class="w-12 h-12 rounded-full object-cover" data-alt="Close-up portrait of a male tech executive with blurred urban background, professional lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCueArpJHIRoMx3FJZ8MGbFJq3ZM4JJIRf10x3vslIXlxjVZzRJdrjfhvhrKMTkUrNxLb42jlf8HEdOTSxneF3b_Y9RYESnBqg7Ybiee0DEeEoG56DRYcMDGer4LVSA7OduygRxAzCzbmmpyh6kZ4OqXpHPAyGAHac--yYkjc432z5d8dS2oFACTuIEHLgvMl9k31DpGkr8634BVMVpw2xEUO2MIMHkndx-bqs5XmEanfL2DBerBVL4Wj8Asgrr-xQEVacUyL1GGw"/>
+<div>
+<div class="font-bold">Marcus Johnson</div>
+<div class="text-xs text-secondary-fixed-dim uppercase tracking-wider">Ops Lead at Loom</div>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container p-10 rounded-3xl border border-outline-variant/10 flex flex-col justify-between">
+<p class="text-lg italic leading-relaxed mb-10 text-on-surface">"Scaling our fintech operations was a nightmare until we found Nexus. The SOC 2 certification gave us the confidence to automate sensitive workflows."</p>
+<div class="flex items-center gap-4">
+<img alt="Priya Sharma" class="w-12 h-12 rounded-full object-cover" data-alt="Professional headshot of a woman, warm natural lighting, minimalist aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm0-VlPXCC9IDYbDRJHnTc5dq8m3hm2vsb2H9Umtu6zNX-EFi9LQ12KUtvLaPPy62WlYRYUe3NS6hUQc_pmOa_y-aaPK2ioYkbKSahMh6TTr1wLx5F9tCTrF1YyA5_j8K1NoDolfoa6OXOjnZkDSRdaYmUj--IOh1f9C1eGmJDUHV4rYJQijtzZsQLpy7N3_ZB1e6BXgDCrMzcAl6EM63V8Uam42bATdZiFYI1TcV4xz1V1RYF7_G8cQ7JWtpjO903Q5vYEZ8V6w"/>
+<div>
+<div class="font-bold">Priya Sharma</div>
+<div class="text-xs text-secondary-fixed-dim uppercase tracking-wider">CTO at Razorpay</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing -->
+<section class="py-32 max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl md:text-5xl font-headline font-bold mb-6">Simple, transparent pricing</h2>
+<p class="text-on-surface-variant">Choose the plan that fits your current needs, scale when you're ready.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Tier 1 -->
+<div class="bg-surface-container-low p-10 rounded-3xl border border-outline-variant/10">
+<div class="text-xl font-bold mb-2">Starter</div>
+<div class="text-4xl font-headline font-extrabold mb-6">$29<span class="text-lg font-medium text-on-surface-variant">/mo</span></div>
+<ul class="space-y-4 mb-10 text-on-surface-variant">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> 5,000 tasks per month</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> 50+ integrations</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> Standard support</li>
+</ul>
+<button class="w-full py-4 rounded-xl font-bold bg-surface-variant hover:bg-surface-container-highest transition-colors">Start Free Trial</button>
+</div>
+<!-- Tier 2 - Most Popular -->
+<div class="bg-surface-container p-10 rounded-3xl border-2 border-primary relative shadow-[0_0_60px_rgba(173,198,255,0.1)]">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 nexus-glow text-on-primary-fixed text-xs font-bold px-4 py-1 rounded-full uppercase tracking-widest">Most Popular</div>
+<div class="text-xl font-bold mb-2">Pro</div>
+<div class="text-4xl font-headline font-extrabold mb-6">$99<span class="text-lg font-medium text-on-surface-variant">/mo</span></div>
+<ul class="space-y-4 mb-10 text-on-surface">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> Unlimited tasks</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> 300+ integrations</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> AI Decision Engine</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> Priority support</li>
+</ul>
+<button class="w-full py-4 rounded-xl font-bold nexus-glow text-on-primary-fixed shadow-lg active:scale-95 transition-transform">Get Started with Pro</button>
+</div>
+<!-- Tier 3 -->
+<div class="bg-surface-container-low p-10 rounded-3xl border border-outline-variant/10">
+<div class="text-xl font-bold mb-2">Enterprise</div>
+<div class="text-4xl font-headline font-extrabold mb-6">Custom</div>
+<ul class="space-y-4 mb-10 text-on-surface-variant">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> Dedicated node hosting</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> Advanced SSO &amp; Security</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> Custom training sessions</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> 24/7 dedicated support</li>
+</ul>
+<button class="w-full py-4 rounded-xl font-bold bg-surface-variant hover:bg-surface-container-highest transition-colors">Contact Sales</button>
+</div>
+</div>
+</section>
+<!-- FAQ -->
+<section class="py-32 max-w-3xl mx-auto px-8">
+<h2 class="text-4xl font-headline font-bold text-center mb-16">Frequently Asked Questions</h2>
+<div class="space-y-4">
+<div class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/10">
+<div class="flex items-center justify-between font-bold cursor-pointer">
+<span>Is there a coding requirement?</span>
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+<p class="mt-4 text-on-surface-variant leading-relaxed">No. Nexus AI is built for everyone. Our visual builder allows you to create complex automations entirely through a drag-and-drop interface.</p>
+</div>
+<div class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/10">
+<div class="flex items-center justify-between font-bold cursor-pointer">
+<span>Can I migrate from Zapier?</span>
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/10">
+<div class="flex items-center justify-between font-bold cursor-pointer">
+<span>How secure is my data?</span>
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/10">
+<div class="flex items-center justify-between font-bold cursor-pointer">
+<span>What happens after the 14-day trial?</span>
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/10">
+<div class="flex items-center justify-between font-bold cursor-pointer">
+<span>Do you offer custom integrations?</span>
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/10">
+<div class="flex items-center justify-between font-bold cursor-pointer">
+<span>Is there a limit on users?</span>
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Banner -->
+<section class="py-32 px-8">
+<div class="max-w-5xl mx-auto nexus-glow rounded-[2rem] p-16 text-center text-on-primary-fixed relative overflow-hidden">
+<div class="absolute top-0 right-0 w-96 h-96 bg-white/20 blur-[100px] -translate-y-1/2 translate-x-1/2 rounded-full"></div>
+<div class="relative z-10">
+<h2 class="text-4xl md:text-6xl font-headline font-extrabold mb-8">Ready to automate your workflows?</h2>
+<p class="text-lg md:text-xl font-medium mb-12 opacity-80 max-w-2xl mx-auto">Join 2,000+ teams scaling their operations with Nexus AI. Start your 14-day free trial today.</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+<button class="bg-on-primary-fixed text-white px-10 py-5 rounded-2xl font-bold text-xl shadow-2xl hover:scale-105 active:scale-95 transition-all">Start Your Free Trial</button>
+<button class="bg-white/10 backdrop-blur-md px-10 py-5 rounded-2xl font-bold text-xl hover:bg-white/20 transition-all">Talk to Sales</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 w-full py-16 px-8 bg-gradient-to-b from-slate-900 to-slate-950 font-['Inter'] text-sm">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="col-span-2 md:col-span-1">
+<div class="text-xl font-black text-slate-100 mb-6">Nexus AI</div>
+<p class="text-slate-400 max-w-xs leading-relaxed mb-6">Empowering teams to automate the mundane and focus on what truly matters.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary">public</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary">share</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary">mail</span>
+</div>
+</div>
+<div>
+<h5 class="text-white font-semibold mb-6">Product</h5>
+<ul class="space-y-4 text-slate-400">
+<li><a class="hover:text-blue-400 transition-colors" href="#">Features</a></li>
+<li><a class="hover:text-blue-400 transition-colors" href="#">Integrations</a></li>
+<li><a class="hover:text-blue-400 transition-colors" href="#">Pricing</a></li>
+<li><a class="hover:text-blue-400 transition-colors" href="#">Enterprise</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white font-semibold mb-6">Company</h5>
+<ul class="space-y-4 text-slate-400">
+<li><a class="hover:text-blue-400 transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-blue-400 transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-blue-400 transition-colors" href="#">Blog</a></li>
+<li><a class="hover:text-blue-400 transition-colors" href="#">Security</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white font-semibold mb-6">Legal</h5>
+<ul class="space-y-4 text-slate-400">
+<li><a class="hover:text-blue-400 transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-blue-400 transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-blue-400 transition-colors" href="#">Cookie Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500">
+<div>© 2024 Nexus AI. All rights reserved.</div>
+<div class="flex gap-8">
+<a class="hover:text-white" href="#">Twitter</a>
+<a class="hover:text-white" href="#">LinkedIn</a>
+<a class="hover:text-white" href="#">GitHub</a>
+</div>
+</div>
+</footer>
+</body></html>
